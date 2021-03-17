@@ -1,0 +1,33 @@
+.futured-works {
+  padding: 30px 0 80px;
+}
+
+.futured-works__title {
+  font-weight: normal;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .futured-works__title {
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .futured-works__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
+  }
+  .futured-works__items .works__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 95%;
+            flex: 0 0 95%;
+    margin-right: 15px;
+  }
+}
+/*# sourceMappingURL=futured-works.css.map */

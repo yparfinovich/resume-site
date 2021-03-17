@@ -1,0 +1,118 @@
+.hello {
+  padding: 28px 0 71px;
+}
+
+@media (max-width: 411px) {
+  .hello {
+    padding: 0 0 58px 0;
+  }
+}
+
+.hello__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 676px) {
+  .hello__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+.hello__title {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 136.36364%;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 890px) {
+  .hello__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 676px) {
+  .hello__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+.hello__text {
+  margin-bottom: 37px;
+}
+
+@media (max-width: 411px) {
+  .hello__text {
+    margin-bottom: 27px;
+    padding: 0 10px;
+  }
+}
+
+.hello .hello-btn {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145%;
+  color: #FFFFFF;
+  padding: 9px 20px;
+  background-color: #FF6464;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.hello .hello-btn:hover {
+  background-color: #c33f3f;
+}
+
+.hello__content-avatar {
+  padding-left: 110px;
+}
+
+@media (max-width: 890px) {
+  .hello__content-avatar {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 676px) {
+  .hello__content-avatar {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.hello__content-avatar img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 243px;
+          flex: 0 0 243px;
+  height: 243px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: -5px 13px 0px 0px #EDF7FA;
+          box-shadow: -5px 13px 0px 0px #EDF7FA;
+}
+
+@media (max-width: 676px) {
+  .hello__content-avatar img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 174px;
+            flex: 0 0 174px;
+    height: 174px;
+  }
+}
+/*# sourceMappingURL=hello.css.map */

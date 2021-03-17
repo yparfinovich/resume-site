@@ -1,0 +1,39 @@
+.article {
+  padding: 10px 0 30px;
+}
+.article__container {
+  max-width: 700px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.article__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+.article__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.article__date {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1;
+  color: #ffffff;
+  padding: 4px 10px 2px;
+  background: #FF7C7C;
+  border-radius: 16px;
+  margin-right: 17px;
+}
+.article__category {
+  font-size: 20px;
+  line-height: 29px;
+}
+.article__text p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 46px;
+}

@@ -1,0 +1,103 @@
+.header {
+  padding: 27px 0;
+}
+
+.header.fixed {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 411px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.header__container {
+  max-width: 1032px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 411px) {
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menu__list li {
+  margin-left: 33px;
+}
+
+@media (max-width: 411px) {
+  .menu__list li {
+    margin-left: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.menu__list li .menu__link {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.menu__list li .menu__link_active {
+  color: #FF6464;
+}
+
+.menu__list li .menu__link:hover {
+  color: #FF6464;
+}
+
+@media (max-width: 411px) {
+  .menu__body {
+    -webkit-transform: translate(0px, -160%);
+            transform: translate(0px, -160%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: all .8s;
+    transition: all .8s;
+  }
+  .menu__body.active {
+    -webkit-transform: translate(0px, 0%);
+            transform: translate(0px, 0%);
+  }
+}
+/*# sourceMappingURL=header.css.map */
